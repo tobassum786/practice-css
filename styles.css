@@ -1,0 +1,137 @@
+* {
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    
+}
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 100vh;
+    background-color: black;
+    border-right:  3px solid red;
+}
+
+.sidebar .logo {
+    position: absolute;
+    top: 1.8rem;
+    color: white;
+    left: 1.0rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    background: red;
+    border-radius: 20px/5px 5px;
+}
+
+.sidebar #btn-div {
+    position: fixed;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: left top;
+    width: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 8px 32px;
+    left: 1.8rem;
+}
+
+
+#btn-div li {
+    display: flex;
+    list-style: none;
+    padding-left: 32px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.active {
+    border-bottom: 2px solid red;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    padding-bottom: 5px;
+}
+
+main {
+    position: absolute;
+    left: 100px;
+}
+
+.main-content {
+    width: calc(100% - 100px);
+    height: 100vh;
+    background: wheat;
+}
+
+/*============top header============*/
+header {
+    width: 100%;
+}
+
+::placeholder {
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+}
+
+.top-header {
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: burlywood;
+    box-shadow: 0px 1px 8px brown;
+}
+
+.search-bar {
+    border-bottom: 2px solid brown;
+    padding: 5px;
+}
+
+.search-bar input[type="search"] {
+    width: 450px;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0 0 0 10px;
+    font-size: 18px;
+    color: brown;
+}
+
+.search-bar input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+.search-bar i {
+    color: brown;
+    font-size: 18px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.social-icons i {
+    color: brown;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.search-bar i:hover,
+.social-icons i:hover {
+    opacity: .6;
+}
